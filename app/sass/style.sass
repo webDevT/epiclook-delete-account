@@ -1,0 +1,585 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    background: #ECF3F8
+    font-family: $main-font
+    font-size: 18px
+    color: $black
+    margin: 0 
+    padding: 0
+    line-height: 1.4
+* 
+    box-sizing: border-box
+img 
+    height: auto
+.container 
+    width: 1144px
+    margin-left: auto 
+    margin-right: auto
+    max-width: 92vw
+.sub-title  
+    color: $blue
+    font-size: 15px 
+    font-weight: 700
+    background: #DEEFFB
+    border: 1px solid $blue
+    display: flex 
+    justify-content: center 
+    align-items: center
+    padding: 4.5px 10px
+    border-radius: 17px
+    margin-bottom: 24px
+.h1  
+    font-size: 66px 
+    font-weight: 700
+    text-align: center
+    line-height: 1
+    margin-top: 0 
+    margin-bottom: 0
+    span 
+        color: $blue
+.h2 
+    font-size: 60px 
+    font-weight: 700
+    line-height: 1
+    margin-top: 0
+    margin-bottom: 32px
+    span 
+        color: $blue
+.h3 
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 24px
+    font-weight: 700
+.button-wrapper
+    background: $blue
+    color: #fff
+    font-weight: 700 
+    font-size: 19px
+    text-transform: uppercase
+    padding: 14px 44px
+    border-radius: 58px
+    display: flex 
+    justify-content: center
+    align-items: center
+    transition: all .3s
+    box-shadow: -10px 10px 150px rgba(14, 175, 255, 0.23), 0px 0px 10px rgba(39, 159, 218, 0.52)
+    img 
+        display: block 
+        margin-left: 10px
+.button
+    text-decoration: none
+    padding: 1px 
+    background: linear-gradient(90deg, #fff, #78D2FF)
+    border-radius: 58px
+.button:hover 
+    color: #fff 
+    .button-wrapper
+        background: $blue-hover
+.row
+    display: flex 
+    justify-content: space-between
+    width: 100%
+.col-4 
+    width: 31%
+.col-6 
+    width: 50%
+.list-item
+    display: flex 
+    padding-top: 8px 
+    padding-bottom: 8px
+    position: relative
+    padding-left: 30px
+.list-item:before 
+    content: ''
+    width: 20px 
+    min-width: 20px
+    height: 20px 
+    background: url('../img/check.svg')
+    background-size: 100%
+    position: absolute 
+    top: 10px
+    left: 0
+    margin-right: 8px
+.list
+    width: 630px
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    padding-bottom: 24px
+.image 
+    max-width: 100%
+    display: block
+    margin-left: auto 
+    margin-right: auto
+.bold 
+    font-weight: 700
+p 
+    margin-bottom: 0
+//end global style
+
+//start header style
+.header 
+    padding-top: 37px 
+    padding-bottom: 37px
+    .container 
+        display: flex 
+        justify-content: center 
+        align-items: center
+//end header style
+
+//start main screen style
+.main-screen 
+    padding-top: 37px
+    padding-bottom: 27px
+    .h1 
+        margin-top: 20px
+    .container
+        display: flex 
+        flex-direction: column 
+        align-items: center
+    .list 
+        margin-top: 25px
+        margin-bottom: 10px
+    .sub-title 
+        margin-bottom: 0
+    .list-item:last-child .bold 
+        margin-left: 0
+.main-screen__image 
+    max-width: 100%
+    margin-top: 50px
+    height: auto
+//end main screen style
+
+//start themes style
+.themes
+    padding-bottom: 65px
+.themes__content 
+    display: flex 
+    flex-direction: column 
+    align-items: flex-start  
+//end themes style
+
+//start how it work style 
+.how-it-work
+    .container 
+        display: flex 
+        flex-direction: column 
+        align-items: center
+.how-it-work__header
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 665px 
+    max-width: 100%
+    text-align: center 
+    margin-bottom: 40px
+    margin-left: auto 
+    margin-right: auto
+    .h2 
+        margin-bottom: 0
+.how-it-work__item
+    text-align: center
+    img 
+        width: 100%
+    p 
+        margin-top: 5px
+.how-it-work
+    .button 
+        margin-top: 50px
+
+.how-it-work__image
+    box-shadow: -10px 10px 60px rgba(44, 213, 236, 0.16), 0px 0px 10px rgba(44, 224, 236, 0.38)
+    border-radius: 10px
+//end how it work style
+
+//start best photo style 
+.best-photo 
+    margin-top: 130px 
+    margin-bottom: 130px
+    position: relative
+    width: 100%
+    overflow: hidden
+   
+.best-photo__header
+    display: flex 
+    align-items: center
+    flex-direction: column
+.slider-wrapper 
+    margin-bottom: 60px
+    //margin-left: 12.5vw
+.best-photo__footer
+    display: flex 
+    justify-content: center
+.slider__item
+    padding: 20px 0.5vw
+    outline: none
+    img 
+        width: 100%
+.slick-track 
+    margin-left: -9.5vw
+.slider-arrow 
+    width: 80px 
+    height: 80px 
+    background: #F3A42E
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    border-radius: 50%
+    cursor: pointer   
+    img 
+        height: 35% 
+.slider-wrapper
+    position: relative
+    width: 100%
+.slider-arrows
+   position: absolute
+   top: 50%
+   left: 50%
+   transform: translateY(-50%) translateX(-50%)
+   opacity: 0
+   z-index: 999
+   .container 
+    display: flex 
+    justify-content: space-between 
+    align-items: center 
+    flex-direction: row
+.next 
+    transform: translateX(100%)
+.prev 
+    transform: translateX(-100%)
+.best-photo:hover .slider-arrows
+    opacity: 1
+.slider__item
+    position: relative
+.slider__item-title
+    position: absolute
+    top: 40px
+    width: 75% 
+    left: 50% 
+    transform: translateX(-50%)
+    text-align: center
+    font-size: 1.181vw
+    font-weight: 700 
+    color: #fff
+.best-photo__footer
+    max-width: 92vw
+    margin-left: auto 
+    margin-right: auto 
+.slider__item-bg
+    box-shadow: 0px 0px 20px rgba(44, 213, 236, .16), 0px 0px 10px rgba(44, 224, 236, 0.36)
+    border-radius: 10px
+//end best photo style
+
+//start footer style
+.footer
+    padding-bottom: 60px
+    .container 
+        display: flex 
+        flex-direction: column 
+        align-items: center
+.copy 
+    font-size: 14px
+    margin-bottom: 12px
+    margin-top: 20px
+    text-align: center
+.footer-link
+    font-size: 16px 
+    text-decoration: underline
+    color: #909090
+    white-space: nowrap
+.footer__links
+    display: flex 
+    align-items: center 
+    justify-content: center
+.footer-link 
+    margin-left: 10px 
+    margin-right: 10px 
+    margin-top: 15px
+    margin-bottom: 10px
+//end footer style 
+
+//start fix btn 
+.fix-wrapper
+    position: fixed 
+    bottom: 10px 
+    left: 50% 
+    transform: translateX(-50%)
+    background: #fff
+    display: none 
+    align-items: center
+    padding: 10px 24px
+    border-radius: 50px
+    .button .button-wrapper
+        font-size: 13px 
+        padding-top: 10px 
+        padding-bottom: 10px
+        padding-left: 25px 
+        padding-right: 25px
+.fix-wrapper__text
+    font-size: 21px 
+    font-weight: 600
+    margin-right: 11px
+.fix-wrapper
+    white-space: nowrap
+//end fix btn
+.list-item
+    display: block
+    .bold 
+        margin-left: 4px 
+        margin-right: 4px
+        //white-space: nowrap
+.item-list 
+    margin-top: 25px 
+.item 
+    padding-top: 4px 
+    padding-bottom: 4px   
+.main-screen 
+    p 
+        font-size: 22px
+        text-align: center
+        span 
+            display: none
+    .button 
+        margin-top: 35px 
+.main-screen__image
+    margin-top: 0
+.mob 
+    display: none
+.desk 
+    display: block
+
+//start photo section style
+.sub-title-wrapper
+    margin-top: 60px 
+    margin-bottom: 50px
+.photo-wrapper
+    width: 350px
+    padding: 3px 
+    border: 2px solid #000
+    border-radius: 10px 
+    box-sizing: border-box
+    display: flex
+    img 
+        border-radius: 10px
+        height: 100%
+.main-screen--photo
+    padding-top: 0
+.avatar-wrapper
+    width: 54px 
+    height: 54px 
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid #2EACE1  
+    display: flex 
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    img 
+        height: 50px
+        width: 50px 
+        object-fit: cover
+        object-position: center
+        border-radius: 50%
+.photo__header
+    padding-bottom: 15px
+.photo__header
+    display: flex
+    align-items: center
+.user-name
+    padding-left: 12px 
+    font-weight: 700
+    font-size: 16px
+.dot 
+    width: 5px 
+    height: 5px 
+    background: #64645F
+    border-radius: 50%
+    margin-left: 10px 
+    margin-right: 10px
+.date 
+    font-size: 16px 
+    color: #64645F
+    font-weight: 500
+//end photo section style
+
+.main-screen
+    .slider-wrapper 
+        display: none
+.mobile-button
+    display: none
+.text-center
+    display: none
+.slick-dots
+    button 
+        outline: none
+
+//start footer thems      
+.footer__thems
+    display: flex 
+    justify-content: center
+    flex-wrap: wrap
+    font-size: 14px
+    margin-top: 20px
+    margin-bottom: 10px
+.footer__theme-item
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    white-space: nowrap
+    margin: 5px
+    border-radius: 20px
+    text-decoration: none
+    color: rgba(#1B2839, 0.6)
+    font-weight: 500
+    transition: all 0.3s
+.footer__theme-item:hover
+    text-decoration: underline
+//end footer thems
+
+//start about style 
+.about-row
+    display: flex
+.about-col 
+    width: 50%
+.text 
+    margin-bottom: 30px
+.join-us 
+    padding-bottom: 150px
+    p
+        text-align: center
+.about-row
+    display: flex 
+    align-items: center
+    text-align: left
+    .h1 
+        margin-top: 0
+        text-align: left
+    p 
+        text-align: left
+.about-section
+    .row 
+        align-items: center  
+.about-main-screen
+    padding-top: 0
+    padding-bottom: 0
+.tech-image
+    margin-left: -40px
+//end about style
+
+//start contact style
+.contact-page 
+    padding-top: 40px
+    margin-top: 0
+    .logo 
+        margin-top: 30px
+
+.contact-page .contact__row
+    display: flex
+    margin-top: 40px
+    width: 100%
+    text-align: left
+    p 
+        text-align: left
+        line-height: 1.5
+    span 
+        font-weight: 700
+        display: inline
+.contact__col
+    width: 50%
+    padding-right: 10%
+    .h3 
+        margin-top: 28px
+        margin-bottom: 25px
+.contact-page
+    padding-bottom: 100px
+.h3 
+    font-size: 46px
+.contact-item
+    margin-bottom: 30px
+.header-contact
+    display: none
+
+//end contact style
+.privacy 
+    padding-top: 20px
+.delete-account-content
+    margin-top: 50px
+    padding-bottom: 100px
+    li 
+        margin-bottom: 10px
+    span
+        font-weight: 700
+        margin-bottom: 10px
+        display: block
+        margin-top: 30px
+.form-section
+    padding-top: 80px 
+    padding-bottom: 80px
+.section 
+    .container 
+        padding-top: 80px 
+        padding-bottom: 80px
+        
+.privacy-content
+    padding-top: 0px
+.section--border
+    .container
+        border-top: 1px solid #000 
+        border-bottom: 1px solid #000
+.section-title
+    font-size: 30px 
+    font-weight: 700
+.form-section__header
+    text-align: center
+    padding-bottom: 30px
+.form
+    max-width: 100% 
+    width: 700px 
+    margin-left: auto 
+    margin-right: auto 
+    label 
+        display: block
+        font-size: 14px
+        margin-bottom: 10px
+    input 
+        width: 100%
+        height: 50px
+        border-radius: 10px
+        padding: 0px 15px
+        background: rgba(#fff, .5)
+        border: 1px solid rgba(#000, .2)
+        font-size: 16px
+    .button 
+        border: none
+        margin-left: auto 
+        margin-right: auto
+.form-footer
+    display: flex 
+    justify-content: center
+    padding-top: 30px
+.form-item 
+    margin-top: 20px
+.form-item--checkbox 
+    display: flex 
+    label 
+        margin-top: 2px
+    input 
+        width: 20px 
+        height: 20px
+        margin-right: 10px
+.form-item--center
+    text-align: center
+.section-title
+    margin-bottom: 20px
+    line-height: 1.2
+.section-list__item
+    margin-bottom: 10px
+
+@import "media"
+
+
+
