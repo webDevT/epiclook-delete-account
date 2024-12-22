@@ -854,17 +854,12 @@ p {
 }
 
 .section .container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .privacy-content {
   padding-top: 0px;
-}
-
-.section--border .container {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
 }
 
 .section-title {
@@ -885,7 +880,6 @@ p {
 }
 .form label {
   display: block;
-  font-size: 14px;
   margin-bottom: 10px;
 }
 .form input {
@@ -895,7 +889,7 @@ p {
   padding: 0px 15px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 18px;
 }
 .form .button {
   border: none;
@@ -936,12 +930,52 @@ p {
 }
 
 .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.2;
 }
 
 .section-list__item {
   margin-bottom: 10px;
+}
+
+.h1--s {
+  font-size: 48px;
+}
+
+.delete-account-content {
+  margin-top: 20px;
+}
+
+.delete-sub-title {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+}
+
+.delete-account-content .mail {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title--center {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-list__item {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section--border .container {
+  padding-top: 0;
+}
+
+.prompt {
+  font-size: 14px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -1377,6 +1411,36 @@ p {
   .delete-account-content {
     margin-top: 20px;
     padding-bottom: 50px;
+  }
+  .privacy {
+    padding-top: 40px;
+  }
+  .delete-sub-title {
+    text-align: left;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .form-item--checkbox input {
+    min-width: 20px;
+  }
+  .form-item--checkbox label {
+    margin-top: 0;
+  }
+  .form-footer {
+    padding-top: 0;
+  }
+  .section .container {
+    padding-top: 0;
+  }
+  .section--border .section-title {
+    font-size: 7.8vw;
+  }
+  .section-list__item {
+    text-align: left;
+  }
+  .section .container {
+    padding-bottom: 30px;
   }
 }
 /* Custom, iPhone Retina */
